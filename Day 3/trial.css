@@ -1,0 +1,434 @@
+body {
+    margin: 0%;
+
+}
+
+body h2:hover{
+    color: palevioletred;
+    border-bottom: 4px solid palevioletred;
+    padding-bottom: 5px;
+
+}
+
+
+/*------------navbar------------------*/
+
+.navbar {
+    display: flex;
+    flex-direction: row;
+    background-color: black;
+    height: 90px;
+    width: 100%;
+    position: fixed;
+    top: 0%;
+
+}
+
+.navbar .logo {
+    display: flex;
+    margin-right: 40%;
+    margin-left: 1%;
+    font-size: 1.3rem;
+    text-decoration: none;
+    color: rgb(240, 236, 236);
+
+}
+
+
+.navbar .navitems {
+    display: flex;
+    padding-left: 3%;
+    padding-top: 15px;
+    padding-left: 30px;
+
+
+}
+
+.navbar .navitems .navitem {
+
+    display: flex;
+    padding-left: 3%;
+    padding-top: 15px;
+    padding-left: 30px;
+
+}
+
+.navbar .navitems a {
+    font-size: 1.2rem;
+    text-decoration: none;
+    font-weight: 500;
+    font-weight: bolder;
+    color: whitesmoke;
+    font-family: 'Times New Roman', Times, serif;
+
+}
+
+.navbar .navitems a:hover {
+    color: palevioletred;
+
+    border-bottom: 2px solid palevioletred;
+
+}
+
+.navbar .hamburger {
+
+    top: 40px;
+    display: flex;
+    flex-direction: row;
+    left: 2px;
+
+
+}
+
+.navbar .hamburger span {
+    display: none;
+    position: fixed;
+    height: 12px;
+    width: 15px;
+    background-color: whitesmoke;
+    padding: 5px;
+    flex-direction: column;
+
+}
+
+
+@media screen and (max-width:1500px) {
+    .navbar .hamburger span {
+        display: flex;
+        right: 10px;
+        top: 35px;
+
+    }
+
+    .navbar .navitems {
+        display: none;
+
+
+
+    }
+
+    .navbar .navitems .navitem {
+        text-align: right;
+        
+        
+        width: fit-content;
+    }
+
+    .navbar .navitems.active {
+        display: flex;
+
+
+        flex-direction: column;
+        position: fixed;
+        top: 65px;
+        /* Adjust this to your navbar height */
+        right: 0;
+        background-color: black;
+        width: 15%;
+        z-index: 1000;
+    }
+    
+
+    @media screen and (max-width:800) {
+
+          .navbar .navitems .navitem {
+        
+        margin-left: 50%;
+        
+    }
+
+    }
+}
+
+
+
+
+/*-----------------darkmode----------------*/
+
+.mode img{
+    position: fixed;
+    bottom: 40px;
+    left: 40px;
+    border: 2px solid black;
+    padding: 5px;
+    
+}
+
+.mode #light{
+    display: block;
+    width: 50px;
+    background-color: rgb(12, 12, 12);
+    
+}
+
+.mode #dark{
+    display: none;
+    width: 50px;
+    background-color: rgb(253, 252, 252);
+}
+
+
+
+/*----------About----------*/
+#About {
+    transition: ease-in-out;
+    margin-top: 120px;
+    display: block;
+}
+
+#About h2 {
+    font-size: 2rem;
+    text-align: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin-top: 50px;
+}
+
+#About img {
+    display: block;
+    height: 250px;
+    float: left;
+    margin: 20px;
+    margin-top: 0px;
+}
+
+#About p {
+    text-align: center;
+    font-size: 1.2rem;
+    padding: 5px;
+    letter-spacing: 1px;
+    line-height: 1.5;
+    margin: 10px;
+    word-spacing: 2px;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+/*-------------vision and mission------------*/
+
+#vision-and-mission {
+    transition: ease-in-out;
+    display: flex;
+    flex-direction: row;
+    margin-top: 100px;
+    justify-content: space-evenly;
+}
+
+
+#vision-and-mission .vision {
+    text-align: center;
+    display: block;
+
+    width: 47%;
+
+}
+
+#vision-and-mission .vision h2 {
+    font-size: 1.4rem;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+#vision-and-mission .vision p {
+    font-size: 1.1rem;
+    font-family: 'Times New Roman', Times, serif;
+    letter-spacing: 1px;
+    word-spacing: 2px;
+    line-height: 1.5;
+}
+
+
+#vision-and-mission .mission {
+    text-align: center;
+    display: block;
+    width: 47%;
+}
+
+#vision-and-mission .mission h2 {
+    font-size: 1.4rem;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+
+}
+
+#vision-and-mission .mission p {
+    font-size: 1.1rem;
+    font-family: 'Times New Roman', Times, serif;
+    letter-spacing: 1px;
+    word-spacing: 2px;
+    line-height: 1.5;
+
+
+
+}
+
+#vision-and-mission .mission ul {
+    display: inline-block;
+    text-align: left;
+}
+
+
+/*------------companies-------------------*/
+
+
+#companies {
+    transition: ease-in-out;
+    text-align: center;
+    margin-top: 100px;
+}
+
+#companies h2 {
+    font-size: 2rem;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin: 50px;
+
+}
+
+#companies img {
+    width: 300px;
+    margin: 30px;
+    padding-right: 15%;
+    padding-left: 15%;
+
+}
+
+#companies img:hover {
+    width: 320px;
+
+}
+
+
+/*----------founder--------------*/
+
+.founders {
+    transition: ease-in-out;
+    margin-top: 100px;
+    text-align: center;
+
+}
+
+.founders h2 {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 2rem;
+}
+
+.founders .founder1 {
+    margin: 100px
+}
+
+.founders .founder1 h3 {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 1.5rem;
+}
+
+.founders .founder1 img {
+    float: right;
+    margin-right: 20%;
+    border: 3px dashed rgb(7, 7, 7);
+    border-radius: 100%;
+    padding: 5px;
+
+}
+
+.founders .founder1 h5 {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 1.3rem;
+}
+
+
+.founders .founder1 p {
+    font-size: 1.1rem;
+    font-family: 'Times New Roman', Times, serif;
+    letter-spacing: 1px;
+    word-spacing: 2px;
+    line-height: 1.5;
+    text-align: left;
+    margin: 50px;
+    word-break: keep-all;
+
+
+}
+
+.founders .founder2 h3 {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 1.5rem;
+}
+
+.founders .founder2 img {
+    float: left;
+    margin-left: 15%;
+    border: 3px dashed black;
+    border-radius: 100%;
+    padding: 5px;
+}
+
+.founders .founder2 h5 {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 1.3rem;
+}
+
+
+.founders .founder2 p {
+    font-size: 1.1rem;
+    font-family: 'Times New Roman', Times, serif;
+    letter-spacing: 1px;
+    word-spacing: 2px;
+    line-height: 1.5;
+    text-align: right;
+    margin: 50px;
+
+
+
+}
+
+
+/*-----------contact-----------*/
+
+#Contact {
+    transition-delay: 2s;
+    transition: ease-in-out;
+    margin-top: 100px;
+    text-align: center;
+}
+
+#Contact h2 {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 2rem;
+    margin-bottom: 50px;
+}
+
+#Contact form {
+    display: inline-block;
+
+    border: 1px black solid;
+    padding: 10px;
+    margin-left: 20%;
+    float: left;
+
+}
+
+#Contact form input {
+    margin-top: 10px;
+    margin-bottom: 10px;
+
+
+}
+
+#Contact p {
+    font-size: 1.1rem;
+    font-family: 'Times New Roman', Times, serif;
+    letter-spacing: 1px;
+    word-spacing: 2px;
+    line-height: 1.5;
+    text-align: center;
+    margin: 50px;
+}
+
+/*---------footer----------*/
+
+footer {
+    background-color: black;
+    height: 100px;
+}
+
+footer p {
+    color: beige;
+    text-align: center;
+    padding-top: 50px;
+}

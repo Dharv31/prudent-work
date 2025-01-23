@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Detail</title>
+    <link rel="stylesheet" href="studentDetail.css">
+    <script src="studentDetail.js" defer></script>
+</head>
+
+<body>
+
+    <div>
+        <button onclick="back()">
+            back
+        </button>
+    </div>
+
+    <div>
+        <h1>Student Detail</h1>
+
+        <div>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Name</th>
+                        <th>Role</th>
+                        <th>Date of Birth</th>
+                        <th>Phone number</th>
+                        <th>Semester</th>
+                        <th>Address</th>
+                        <th>Email</th>
+                        <th>Image</th>
+                        <th>delete</th>
+                        <th>update</th>
+                        <th>Approval</th>
+
+                    </tr>
+                </thead>
+                <tbody id="data">
+
+
+                </tbody>
+
+            </table>
+        </div>
+    </div>
+
+    <div id="fullscreen" class="full-screen">
+        <button class="close-btn" onclick="closeFullscreen()">close</button>
+        <img id="fullscreenimage" src="" alt="">
+
+    </div>
+
+</body>
+
+</html>
