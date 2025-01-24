@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Detail</title>
+    <link rel="stylesheet" href="profile.css">
+    <script src="profile.js" defer></script>
+</head>
+
+<body>
+
+    <div>
+        <button onclick="back()">
+            back
+        </button>
+    </div>
+
+    <div>
+        <h1>Profile</h1>
+
+       <div id="detail">
+
+       
+        <h3>Name </h3> <span>:</span>
+        <h5 id="name"></h5>
+        <h3>Email </h3><span>:</span>
+        <h5 id="email"></h5>
+        <h3>Role </h3><span>:</span>
+        <h5 id="role"></h5>
+        <h3>Date of Birth </h3><span>:</span>
+        <h5 id="date"></h5>
+        <h3>Phone Number </h3><span>:</span>
+        <h5 id="phone"></h5>
+        <h3>Semester </h3><span>:</span>
+        <h5 id="semester"></h5>
+        <h3>Address </h3><span>:</span>
+        <h5 id="address"></h5>
+        <h3>Image </h3><span>:</span>
+        <h5 id="img"></h5>
+
+        <h3>Update </h3><span>:</span>
+        <h5 id="update"></h5>
+        <h3>Delete </h3><span>:</span>
+        <h5 id="delete"></h5>
+        <h3>Approval </h3><span>:</span>
+        <h5 id="approval"></h5>
+        
+
+       </div>
+
+    <div id="fullscreen" class="full-screen">
+        <button class="close-btn" onclick="closeFullscreen()">close</button>
+        <img id="fullscreenimage" src="" alt="">
+
+    </div>
+
+</body>
+
+</html>

@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Signup</title>
+    <link rel="stylesheet" href="signup.css">
+    <script src="signup.js" defer></script>
+</head>
+
+<body>
+    <div>
+        <button onclick="back()">
+            back
+        </button>
+    </div>
+    <h1>Signup Form</h1>
+    <div class="signUpForm">
+        
+
+        <form name="myform" action="" method="post" onsubmit="return validate(event);">
+            <label for="name">Username:</label>
+            <input type="text" id="name" name="name" required pattern="^[a-zA-Z]*$" placeholder="Enter your Username"><br>
+
+            <label for="">Role:-</label>
+            <select name="role" id="role">
+                <option value="Select Role">Select Role</option>
+                <option value="User">User</option>
+                <option value="Admin">Admin</option>
+            </select>
+
+            <label for="">Admin code</label>
+            <input type="text" name="admincode" id="admincode">
+
+
+            <label for="dob">Date of Birth:</label>
+            <input type="date" id="dob" name="dob" required><br>
+
+            <label for="number">Phone Number:</label>
+            <input type="text" id="number" name="number" required placeholder="Enter your phone number"><br>
+
+            <label for="semester">Semester:</label>
+            <select name="semester" id="semester" required>
+                <option value="Select sem">Select Semester</option>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+                <option value="6">6</option>
+                <option value="7">7</option>
+                <option value="8">8</option>
+            </select><br>
+
+            <label for="address">Address:</label>
+            <textarea id="address" name="Address" required placeholder="Enter your Address"></textarea><br>
+
+            <label for="img">Image:</label>
+            <input type="file" id="img" name="img" required><br>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required placeholder="Enter your Email"><br>
+
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password" 
+                title="Must contain at least one number, one uppercase and lowercase letter, and at least 8 or more characters"
+                pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" required placeholder="Enter your Password"><br>
+
+            <input type="submit" value="Submit">
+        </form>
+        
+        <a href="../login/login.html">Login</a>
+    </div>
+</body>
+
+</html>
